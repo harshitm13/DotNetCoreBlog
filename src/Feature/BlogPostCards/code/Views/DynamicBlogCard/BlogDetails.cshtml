@@ -1,0 +1,45 @@
+﻿
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Solr_Search_Application.Models
+
+@{
+    Layout = null;
+    var item1 = Sitecore.Context.Database.GetItem("{E90A3045-AA41-4E3E-AE05-67DB21ABFD27}");
+    Sitecore.Data.Items.Item contextItem = Sitecore.Context.Item;
+    var currentItem = Sitecore.Context.Database.GetItem(contextItem.ID);
+
+}
+
+<div>
+    <main role="main" class="container blog-post-detail">
+        <div class="row">
+            <div class="blog-post-detail-card card col-lg-12">
+                <img class="card-img-top" @Html.Sitecore().Field("BlogSmallImage", Model)
+                <div class="card-body bg-light">
+                    <strong class="d-inline-block mb-2 text-success">@Html.Sitecore().Field("Category")</strong>
+                    <h3 class="card-title">@Html.Sitecore().Field("BlogCardTitle")</h3>
+                    <div class="mb-1 text-muted">@Html.Sitecore().Field("PostedDate", new { format = "yyyy-MMM-dd" })</div>
+                    @Html.Sitecore().Field("LongDescription")
+                    <div class="blog-detail-tag-list">
+                        <span class="read-more-heading">@Html.Sitecore().Field("ArticleReadMoreLabel", item1)</span>
+
+
+                        @{
+                            Sitecore.Data.Fields.MultilistField multilistField = currentItem.Fields["Tags"];
+                            if (multilistField != null)
+                            {
+                                foreach (Sitecore.Data.Items.Item Tagitms in multilistField.GetItems())
+                                {
+                                    string name = Tagitms.Name;
+                                    <a class="btn btn-info" href="#" role="button">@name</a>
+                                }
+                            }
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

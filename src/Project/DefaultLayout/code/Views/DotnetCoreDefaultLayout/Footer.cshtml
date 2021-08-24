@@ -1,0 +1,13 @@
+﻿@{
+    // var item = Sitecore.Context.Database.GetItem("/sitecore/content/Blog/Website Settings/Local Settings");
+    var item = Sitecore.Context.Database.GetItem("{E90A3045-AA41-4E3E-AE05-67DB21ABFD27}");
+}
+
+<Footer>
+    <div class="container">
+        <div class="text-white bg-primary">
+            <p class="lead"> @Html.Sitecore().Field("Copyright", item)</p>
+        </div>
+    </div>
+</Footer>
+

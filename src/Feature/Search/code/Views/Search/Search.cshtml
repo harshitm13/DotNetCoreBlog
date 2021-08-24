@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Search Component";
+    var item = Sitecore.Context.Database.GetItem("{8A0DEAF4-FBDD-48F6-9EAA-F15F6C93B027}");
+}
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+{
+    @Html.Sitecore().FormHandler("Search", "searchPredicate")
+
+    <div class="main-search">
+        <div class="input-group">
+            @Html.TextBox("searchInput", "", new { @class = "form-control", placeholder = @Html.Sitecore().Field("TextboxText", item), autocomplete = "off" })
+            <div class="input-group-append">
+
+                <input type="submit" id="btnSearch" class="btn btn-dark" value=@Html.Sitecore().Field("SearchButtonText", item) />
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+}

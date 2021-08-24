@@ -1,0 +1,80 @@
+﻿
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Solr_Search_Application.Models
+@{
+    Layout = null;
+    var item = Sitecore.Context.Database.GetItem("{E90A3045-AA41-4E3E-AE05-67DB21ABFD27}");
+}
+
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="~/assets/css/bootstrap-themed.min.css">
+    <link rel="stylesheet" href="~/assets/css/blogsite.css">
+</head>
+<div class="container">
+    <div class="jumbotron text-white bg-primary">
+        <h1 class="display-3"> @Html.Sitecore().Field("BlogMainTitle", item)</h1>
+        <p class="lead">  @Html.Sitecore().Field("BlogSubTitle", item)</p>
+    </div>
+</div>
+@using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+{
+    @Html.Sitecore().FormHandler("Search", "searchPredicate")
+
+    <div class="main-search">
+        <div class="input-group">
+            @Html.TextBox("searchInput", "", new { @class = "form-control", placeholder = @Html.Sitecore().Field("TextboxText", item), autocomplete = "off" })
+            <div class="input-group-append">
+
+                <input type="submit" id="btnSearch" class="btn btn-dark" value=@Html.Sitecore().Field("SearchButtonText", item) />
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+}
+<body>
+
+    @if (ViewBag.searchCards != null)
+    {
+
+        <main role="main" class="container blog-posts">
+            <div class="row">
+                @foreach (BlogCard Postcards in (List<BlogCard>)ViewBag.searchCards)
+                {
+
+                    <div class="blog-post-card card col-lg-4 col-md-6">
+                        @Html.Sitecore().Field("BlogSmallImage", Postcards.sitecoreItem, new { @class = "card-img-top" })
+                        <div class="card-body bg-light">
+                            <strong class="d-inline-block mb-2 text-success">@Postcards.Category</strong>
+                            <h3 class="card-title">@Postcards.BlogTitle</h3>
+                            <div class="mb-1 text-muted">@Postcards.date</div>
+                            <p>@Postcards.ShortDesc</p>
+                            <a href="@Postcards.BlogURL" class="btn btn-warning btn-block">@Postcards.Readonbtn</a>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </main>
+    }
+
+</body>
+<Footer>
+    <div class="container">
+        <div class="text-white bg-primary">
+            <p class="lead"> @Html.Sitecore().Field("Copyright", item)</p>
+        </div>
+    </div>
+</Footer>
+</html>
+
+
+
+

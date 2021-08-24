@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{4A949D14-2358-4123-99B1-20D756C6AD28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{AE766B43-98A2-48CA-B7FB-44BAE0293F57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{70018122-FDE4-4DB1-AFBE-3AE2777F5F2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{8B70A836-7B84-413B-9E2B-86D15154331D}"
+	ProjectSection(SolutionItems) = preProject
+		gulp-config.js = gulp-config.js
+		gulpfile.js = gulpfile.js
+		package.json = package.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Blog Post Cards", "Blog Post Cards", "{C9EE6711-E489-48C5-859D-A76A91483243}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogHelix.Feature.BlogPostCard", "src\Feature\BlogPostCards\code\BlogHelix.Feature.BlogPostCard.csproj", "{E565C4BB-75AE-49C3-A6CD-FF64D0447599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefaultLayout", "DefaultLayout", "{99E76398-3EBE-42B5-9DBA-EADEFC9117F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogHelix.Project.DefaultLayout", "src\Project\DefaultLayout\code\BlogHelix.Project.DefaultLayout.csproj", "{375E097D-5766-4595-B4AA-89220C57700B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PageNotFound", "PageNotFound", "{EBFD44FF-A0FE-41A7-8B0C-6EFB5843E53D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogHelix.Feature.PageNotFound", "src\Feature\404\code\BlogHelix.Feature.PageNotFound.csproj", "{EF4F6FC6-323A-4613-A59D-0328858500E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{14710216-2C26-458B-8D12-9BAAFF4EE157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogHelix.Feature.Search", "src\Feature\Search\code\BlogHelix.Feature.Search.csproj", "{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{E7AEA503-E8FD-4F1C-87DC-70987DF435FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{A0A2CBF4-5E15-4DDD-A73D-395354C5C107}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\blogsite.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\blogsite.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.css.map
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.min.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.min.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.min.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-grid.min.css.map
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.css.map
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.min.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.min.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.min.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-reboot.min.css.map
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-themed.min.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap-themed.min.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.css.map
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.min.css = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.min.css
+		..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.min.css.map = ..\..\Users\User\Desktop\projects\HTML Templates\assets\css\bootstrap.min.css.map
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E565C4BB-75AE-49C3-A6CD-FF64D0447599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E565C4BB-75AE-49C3-A6CD-FF64D0447599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E565C4BB-75AE-49C3-A6CD-FF64D0447599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E565C4BB-75AE-49C3-A6CD-FF64D0447599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{375E097D-5766-4595-B4AA-89220C57700B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{375E097D-5766-4595-B4AA-89220C57700B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{375E097D-5766-4595-B4AA-89220C57700B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{375E097D-5766-4595-B4AA-89220C57700B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF4F6FC6-323A-4613-A59D-0328858500E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4F6FC6-323A-4613-A59D-0328858500E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4F6FC6-323A-4613-A59D-0328858500E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4F6FC6-323A-4613-A59D-0328858500E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9EE6711-E489-48C5-859D-A76A91483243} = {AE766B43-98A2-48CA-B7FB-44BAE0293F57}
+		{E565C4BB-75AE-49C3-A6CD-FF64D0447599} = {C9EE6711-E489-48C5-859D-A76A91483243}
+		{99E76398-3EBE-42B5-9DBA-EADEFC9117F6} = {70018122-FDE4-4DB1-AFBE-3AE2777F5F2E}
+		{375E097D-5766-4595-B4AA-89220C57700B} = {99E76398-3EBE-42B5-9DBA-EADEFC9117F6}
+		{EBFD44FF-A0FE-41A7-8B0C-6EFB5843E53D} = {AE766B43-98A2-48CA-B7FB-44BAE0293F57}
+		{EF4F6FC6-323A-4613-A59D-0328858500E2} = {EBFD44FF-A0FE-41A7-8B0C-6EFB5843E53D}
+		{14710216-2C26-458B-8D12-9BAAFF4EE157} = {AE766B43-98A2-48CA-B7FB-44BAE0293F57}
+		{7CFDA93D-2076-4938-B3AF-97F6C9FB21D7} = {14710216-2C26-458B-8D12-9BAAFF4EE157}
+		{E7AEA503-E8FD-4F1C-87DC-70987DF435FF} = {70018122-FDE4-4DB1-AFBE-3AE2777F5F2E}
+		{A0A2CBF4-5E15-4DDD-A73D-395354C5C107} = {E7AEA503-E8FD-4F1C-87DC-70987DF435FF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ADD0C59-197A-4CB1-9448-6C16D0C0CB3E}
+	EndGlobalSection
+EndGlobal

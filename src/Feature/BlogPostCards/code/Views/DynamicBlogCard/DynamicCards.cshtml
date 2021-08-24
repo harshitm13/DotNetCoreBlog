@@ -1,0 +1,29 @@
+﻿
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using BlogHelix.Feature.BlogPostCard.Models
+@{
+    Layout = null;
+    var item = Sitecore.Context.Database.GetItem("{E90A3045-AA41-4E3E-AE05-67DB21ABFD27}");
+}
+
+
+<main role="main" class="container blog-posts">
+    <div class="row">
+        @foreach (BlogCard Postcards in (List<BlogCard>)ViewBag.BlogCards)
+        {
+
+            <div class="blog-post-card card col-lg-4 col-md-6">
+                @Html.Sitecore().Field("BlogSmallImage", Postcards.sitecoreItem, new { @class = "card-img-top" })
+                <div class="card-body bg-light">
+                    <strong class="d-inline-block mb-2 text-success">@Postcards.Category</strong>
+                    <h3 class="card-title">@Postcards.BlogTitle</h3>
+                    <div class="mb-1 text-muted">@Postcards.date</div>
+                    <p>@Postcards.ShortDesc</p>
+                    <a href="@Postcards.BlogURL" class="btn btn-warning btn-block">@Postcards.Readonbtn</a>
+                </div>
+            </div>
+        }
+    </div>
+</main>
+
